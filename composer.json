@@ -1,0 +1,21 @@
+{
+    "name": "evyex/container-simple",
+    "description": "Simple container (DI)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Evyex\\ContainerSimple\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Evgen Yurchenko",
+            "email": "evgenijvy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "psr/container": "^2.0@dev"
+    }
+}
