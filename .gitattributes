@@ -5,3 +5,4 @@
 /.gitattributes export-ignore
 /dev export-ignore
 /Makefile export-ignore
+/.github export-ignore
