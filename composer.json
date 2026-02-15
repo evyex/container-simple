@@ -5,7 +5,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Evyex\\ContainerSimple\\": "src/",
+            "Evyex\\ContainerSimple\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "Evyex\\ContainerSimple\\Tests\\": "tests/"
         }
     },
