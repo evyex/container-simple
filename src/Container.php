@@ -8,6 +8,9 @@ use Psr\Container\ContainerInterface;
 
 final class Container implements ContainerInterface
 {
+    /**
+     * @var array<class-string, object>
+     */
     private array $services = [];
 
     /**
