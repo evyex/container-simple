@@ -10,6 +10,7 @@ VENDOR=vendor/bin/
 STAN=$(VENDOR)phpstan --configuration=dev/phpstan.neon
 TEST=$(VENDOR)phpunit --configuration=dev/phpunit.xml
 AUDIT=composer audit
+CSFIX=$(VENDOR)php-cs-fixer fix --config=dev/.php-cs-fixer.dist.php
 
 .PHONY: help
 help: ## Shows the help
@@ -27,8 +28,13 @@ test: ## Run unit test
 audit: ## Run composer audit
 	$(AUDIT)
 
+.PHONY: csfix
+csfix: ## Fix code style
+	$(CSFIX)
+
 .PHONY: pipeline
 pipeline: ## Run full pipeline (audit, stan, test)
 	$(AUDIT)
+	$(CSFIX)
 	$(STAN)
 	$(TEST)

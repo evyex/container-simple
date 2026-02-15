@@ -7,9 +7,14 @@ namespace Evyex\ContainerSimple\Tests;
 use Evyex\ContainerSimple\Container;
 use PHPUnit\Framework\TestCase;
 
-class ServiceA {}
-class ServiceB {
-    public function __construct(public ServiceA $serviceA) {}
+class ServiceA
+{
+}
+class ServiceB
+{
+    public function __construct(public ServiceA $serviceA)
+    {
+    }
 }
 
 class ContainerTest extends TestCase
