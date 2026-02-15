@@ -1,0 +1,10 @@
+parameters:
+    level: 10
+    paths:
+        - ../src
+
+    ignoreErrors:
+        - '#Method Evyex\\ContainerSimple\\Container::get\(\) should return T of object but returns object\.#'
+        - '#Cannot call method getName\(\) on ReflectionType\|null\.#'
+        - '#Unable to resolve the template type T in call to method Evyex\\ContainerSimple\\Container::get\(\)#'
+        - '~Parameter #1 \$id of method Evyex\\ContainerSimple\\Container::get\(\) expects class-string<object>, mixed given\.~'
