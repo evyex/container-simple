@@ -24,6 +24,11 @@ if ($container->has(MyService::class)) {
 }
 ```
 
+## Features
+- Autowiring
+- ContainerInterface compliant (PSR-11)
+- Lightweight
+
 ## Requirements
 
 - PHP 8.1+
