@@ -1,6 +1,6 @@
 # container-simple
 
-Simple PHP Dependency Injection Container implementing PSR-11 ContainerInterface with Autowiring.
+Simple PHP Dependency Injection Container implementing PSR-11 ContainerInterface with Autowiring and Recursion resolving.
 
 ## Installation
 
@@ -28,8 +28,9 @@ if ($container->has(MyService::class)) {
 - Autowiring
 - ContainerInterface compliant (PSR-11)
 - Lightweight
+- Recursion resolving
 
 ## Requirements
 
-- PHP 8.1+
+- PHP ^8.1
 - psr/container ^2.0
